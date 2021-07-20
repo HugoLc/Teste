@@ -21,11 +21,27 @@ header {
 }
 
 .top{
-  background: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #020085;
   height: 26px;
+  width: 100%;
+}
+
+.top span{
+  font-weight: bold;
+  color: white;
+}
+
+.top span:last-child{
+  margin: 0 12% 0 10px;
+  font-weight: bold;
+  color: white;
 }
 
 .logo{
+  
   width: 207px
 }
 
