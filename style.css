@@ -25,6 +25,10 @@ header {
   height: 26px;
 }
 
+.logo{
+  width: 207px
+}
+
 .slider {
   background: blue;
   grid-area: s;
@@ -38,6 +42,11 @@ main {
 .img-instrucoes{
   width: 325px;
   height: 212px;
+}
+
+li .img-boxes{
+  width: 196px;
+  height: 163px;
 }
 
 footer {
