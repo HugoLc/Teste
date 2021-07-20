@@ -1,0 +1,41 @@
+html, body{
+  margin:0;
+  padding:0;
+  box-sizing:borderbox;
+  background: purple;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 116px 290px 555px 176px;
+  grid-template-areas: "h"
+                       "s"
+                       "m"
+                       "f";
+}
+
+header {
+  background: green;
+  grid-area: h;
+}
+
+.top{
+  background: yellow;
+  height: 26px;
+}
+
+section {
+  background: blue;
+  grid-area: s;
+}
+
+main {
+  background: pink;
+  grid-area: m;
+}
+
+footer {
+  background: red;
+  grid-area: f;
+}
