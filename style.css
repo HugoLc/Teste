@@ -25,7 +25,7 @@ header {
   height: 26px;
 }
 
-section {
+.slider {
   background: blue;
   grid-area: s;
 }
@@ -33,6 +33,11 @@ section {
 main {
   background: pink;
   grid-area: m;
+}
+
+.img-instrucoes{
+  width: 325px;
+  height: 212px;
 }
 
 footer {
