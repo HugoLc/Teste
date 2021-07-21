@@ -23,19 +23,20 @@ header {
   grid-area: ht;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  background: #020085;
+  justify-content: center;
   height: 26px;
   width: 100%;
+  background: #020085;
 }
 
-.header-top span{
-  font-weight: bold;
-  color: white;
+.div-tel{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 875px;
 }
 
-.header-top span:last-child{
-  margin: 0 12% 0 10px;
+.div-tel span{
   font-weight: bold;
   color: white;
 }
@@ -45,18 +46,23 @@ header {
   background: white;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   height: 90px;
 }
 
+.logo-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 875px;
+}
+
 .logo{
-  margin-left: 12%;
   width: 207px
 }
 
 .header-bot nav{
-  margin-right: 12%;
   margin-top: 4%;
 }
 
@@ -66,6 +72,13 @@ header {
   padding: 10px 18px 10px 10px;
   color: #b5b5b5;
   text-transform: uppercase;
+}
+
+.menu-principal li:last-child{
+  padding: 10px 0px 10px 10px;
+}
+
+.header-bot ul li:last-child{
 }
 .menu ul{
   padding-inline-start: 0;
@@ -136,6 +149,10 @@ h1{
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: white;
   grid-area: m;
 }
@@ -143,24 +160,26 @@ main {
 .instrucoes{
   display: flex;
   justify-content: space-between;
+  width: 875px;
+  margin-top: 10px;
 }
 
 .instrucoes article{
   display: inline-block;
-  margin-left: 12%;
+
 }
 
 .img-instrucoes{
   display: inline-block;
   width: 325px;
   height: 212px;
-  margin-right: 12%;
   margin-top: 12px;
 }
 
 .boxes{
   margin-top: 45px;
-  margin-left: 12%;
+  width: 875px;
+
 }
 
 .boxes h1{
@@ -168,13 +187,14 @@ main {
 }
 
 .boxes ul{
+  display: flex;
   padding-inline-start: 0;
-
+  justify-content: space-between;
 }
 
 .boxes ul li{
   display: inline-block;
-  margin: 0 4%;
+  margin: 0 ;
   text-align: center;
   box-sizing: border-box;
 }
