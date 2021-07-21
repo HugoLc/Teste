@@ -152,7 +152,7 @@ main {
 
 .boxes ul li{
   display: inline-block;
-  margin: 0 7px;
+  margin: 0 4%;
   text-align: center;
   box-sizing: border-box;
 }
