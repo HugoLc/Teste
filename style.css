@@ -109,8 +109,20 @@ h1{
 }
 
 .slider {
-  background: blue;
+  display: flex;
+  justify-content: center;
+  background: #d1d1d1;
   grid-area: s;
+}
+
+.carrossel{
+  height: 290px;
+  width: 894px;
+}
+
+.c-img{
+  height: 290px;
+  width: 894px;
 }
 
 main {
