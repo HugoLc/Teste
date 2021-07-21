@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../nivo-slider.css" type="text/css" media="screen" />
     <title>Teste Ideal Trends</title>
   </head>
   <body>
@@ -38,7 +40,25 @@
           </nav>
         </div>
       </header>
-      <div class="slider"></div>
+      <div class="slider">
+        <div id="slider" class="nivoSlider">
+          <img src="demo/images/toystory.jpg" data-thumb="demo/images/toystory.jpg" alt="" />
+          <img src="demo/images/up.jpg" data-thumb="demo/images/up.jpg" alt="" title="This is an example of a caption" />
+          <img src="demo/images/walle.jpg" data-thumb="demo/images/walle.jpg" alt="" data-transition="slideInLeft" />
+          <img src="demo/images/nemo.jpg" data-thumb="demo/images/nemo.jpg" alt="" title="#htmlcaption" />
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.nivo.slider.js"></script>
+
+        <script type="text/javascript">
+          $(window).load(function() {
+          $('#slider').nivoSlider();
+          });
+        </script>
+
+
+      </div>
       <main>
         <section class="instrucoes">
           <article>
@@ -86,5 +106,10 @@
         <span>Copyright (c) 2018 Copyright Holder All Rights Reserved.</span>
       <footer>
     </div>
+    <script type="text/javascript">
+      $(window).load(function() {
+      $('#slider').nivoSlider();
+      });
+    </script>
   </body>
 </html>
