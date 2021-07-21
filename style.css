@@ -5,6 +5,14 @@ html, body{
   background: purple;
 }
 
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+img{
+  border-radius: 2px;
+}
+
 .container{
   display: grid;
   grid-template-columns: 1fr;
@@ -38,7 +46,12 @@ header {
 
 .div-tel span{
   font-weight: bold;
+  font-size: 12px;
   color: white;
+}
+
+.div-tel span:last-child{
+  margin-left: 10px
 }
 
 .header-bot{
@@ -74,7 +87,7 @@ header {
   text-transform: uppercase;
 }
 
-.menu-principal li:last-child{
+.menu-principal .li-menu-principal:last-child{
   padding: 10px 0px 10px 10px;
 }
 
@@ -174,6 +187,7 @@ main {
   width: 325px;
   height: 212px;
   margin-top: 12px;
+  box-shadow: 2px 2px 10px gray;
 }
 
 .boxes{
@@ -244,5 +258,7 @@ footer ul li a:hover{
 
 footer span {
   display: inline-block;
+  color: white;
   margin: 50px 0 20px  0;
+  font-size: 12px;
 }
