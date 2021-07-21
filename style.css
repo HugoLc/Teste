@@ -63,26 +63,34 @@ header {
 .header-bot ul li{
   position: relative;
   display: inline-block;
-  padding: 10px;
+  padding: 10px 18px 10px 10px;
   color: #b5b5b5;
   text-transform: uppercase;
 }
+.menu ul{
+  padding-inline-start: 0;
+}
 
-header a:visited {
-  color: white;
+a, a:visited {
+  color: #b5b5b5;
+  text-decoration-line: none;
+  font-weight: bold;
 }
 .sub-m-1{
-  display: none;
+  display: block;
+  visibility: hidden;
   position: absolute;
-  top: 36px;
-  left: 8px;
+  top: 33px;
+  /*left: 8px;*/
   width: 100px;
   background: #020085;
   padding: 0 15px;
+  z-index: 1;
+  transition: 2s;
 }
 
 .empresa:hover .sub-m-1{
-  display: block;
+  visibility: visible;
 }
 
 .sub-m-1 a{
@@ -90,17 +98,19 @@ header a:visited {
 }
 
 .sub-m-2{
-  display: none;
+  display: block;
+  visibility: hidden;
   position: absolute;
   width: 100px;
-  top: 114px;
-  left: 130px;
+  left: 113px;
+  top: 0px;
   background: #020085;
   padding: 0 15px;
 }
 
 .submenu:hover .sub-m-2{
-  display: block;
+
+  visibility: visible;
 }
 
 h1{
@@ -174,9 +184,6 @@ main {
   width: 196px;
 }
 
-.boxes a{
-  text-decoration-line: none;
-}
 
 .boxes ul li:first-child{
   margin-left: 0;
@@ -210,9 +217,6 @@ li a{
   text-decoration-line: none;
 }
 
-footer a:visited{
-  color: #b5b5b5;
-}
 
 footer ul li a:hover{
   text-decoration-line: underline;
