@@ -61,10 +61,46 @@ header {
 }
 
 .header-bot ul li{
+  position: relative;
   display: inline-block;
   padding: 10px;
   color: #b5b5b5;
   text-transform: uppercase;
+}
+
+header a:visited {
+  color: white;
+}
+.sub-m-1{
+  display: none;
+  position: absolute;
+  top: 36px;
+  left: 8px;
+  width: 100px;
+  background: #020085;
+  padding: 0 15px;
+}
+
+.empresa:hover .sub-m-1{
+  display: block;
+}
+
+.sub-m-1 a{
+  position: relative;
+}
+
+.sub-m-2{
+  display: none;
+  position: absolute;
+  width: 100px;
+  top: 114px;
+  left: 130px;
+  background: #020085;
+  padding: 0 15px;
+}
+
+.submenu:hover .sub-m-2{
+  display: block;
 }
 
 h1{
@@ -158,7 +194,7 @@ footer ul li{
 
 }
 
-footer ul li a{
+li a{
   text-decoration-line: none;
 }
 
