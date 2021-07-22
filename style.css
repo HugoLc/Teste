@@ -2,7 +2,6 @@ html, body{
   margin:0;
   padding:0;
   box-sizing:borderbox;
-  background: purple;
 }
 
 body{
@@ -16,7 +15,8 @@ img{
 .container{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 26px 90px 290px 555px 176px;
+  /* grid-template-rows: 26px 90px 290px 555px 176px; */
+  grid-template-rows: 2% 8% 25% 50% 15%;
   grid-template-areas: "ht"
                        "hb"
                        "s"
@@ -262,3 +262,11 @@ footer span {
   margin: 50px 0 20px  0;
   font-size: 12px;
 }
+
+/*
+@media screen and (max-width: 480px) {
+	.carrossel, .c-img, .div-tel, .logo-menu, .boxes, .logo-menu, .instrucoes{
+		width: auto;
+	}
+}
+*/
