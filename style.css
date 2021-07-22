@@ -2,6 +2,7 @@ html, body{
   margin:0;
   padding:0;
   box-sizing:borderbox;
+  height: 100%;
 }
 
 body{
@@ -12,23 +13,27 @@ img{
   border-radius: 2px;
 }
 
-.container{
+/* .container{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 26px 90px 290px 555px 176px;
-  /*grid-template-rows: 2% 8% 25% 50% 15%;*/
+  /*grid-template-rows: 2% 8% 25% 50% 15%;
   grid-template-areas: "ht"
                        "hb"
                        "s"
                        "m"
                        "f";
+} */
+.container{
+  min-height:100%;
+  position: relative;
 }
 
 header {
 }
 
 .header-top{
-  grid-area: ht;
+  /*grid-area: ht;*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,13 +60,14 @@ header {
 }
 
 .header-bot{
-  grid-area: hb;
+  /*grid-area: hb;*/
   background: white;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 90px;
+
 }
 
 .logo-menu{
@@ -148,7 +154,9 @@ h1{
   display: flex;
   justify-content: center;
   background: #d1d1d1;
-  grid-area: s;
+  height: 290px;
+  width: 100%;
+  /*grid-area: s;*/
 }
 
 .carrossel{
@@ -167,7 +175,7 @@ main {
   justify-content: center;
   align-items: center;
   background: white;
-  grid-area: m;
+  /* grid-area: m; */
 }
 
 .instrucoes{
@@ -229,10 +237,12 @@ li .img-boxes{
 }
 
 footer {
+  position:absolute;
+  bottom:-176px;
+  width:100%;
   text-align: center;
   background: #454545;
-  grid-area: f;
-
+  /* grid-area: f; */
 }
 
 footer ul{
