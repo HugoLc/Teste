@@ -1,12 +1,14 @@
 html, body{
   margin:0;
   padding:0;
-  box-sizing:borderbox;
+  box-sizing: border-box;
   height: 100%;
+  width: 100%;
 }
 
 body{
   font-family: 'Roboto', sans-serif;
+  background: purple;
 }
 
 img{
@@ -25,8 +27,11 @@ img{
                        "f";
 } */
 .container{
+  display: flex;
+  flex-direction: column;
   min-height:100%;
   position: relative;
+  width: 100%;
 }
 
 header {
@@ -201,7 +206,6 @@ main {
 .boxes{
   margin-top: 45px;
   width: 875px;
-
 }
 
 .boxes h1{
@@ -273,10 +277,17 @@ footer span {
   font-size: 12px;
 }
 
-/*
-@media screen and (max-width: 480px) {
-	.carrossel, .c-img, .div-tel, .logo-menu, .boxes, .logo-menu, .instrucoes{
-		width: auto;
+
+@media screen and (max-width: 800px) {
+	.container, .carrossel, .c-img, .div-tel, .logo-menu, .boxes, .logo-menu, .instrucoes, html, body{
+		width: 100%;
 	}
+
+  .boxes ul {
+    display: block;
+  }
+
+  .instrucoes{
+    flex-direction: column;
+  }
 }
-*/
