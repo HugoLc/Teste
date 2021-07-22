@@ -15,8 +15,8 @@ img{
 .container{
   display: grid;
   grid-template-columns: 1fr;
-  /* grid-template-rows: 26px 90px 290px 555px 176px; */
-  grid-template-rows: 2% 8% 25% 50% 15%;
+  grid-template-rows: 26px 90px 290px 555px 176px;
+  /*grid-template-rows: 2% 8% 25% 50% 15%;*/
   grid-template-areas: "ht"
                        "hb"
                        "s"
@@ -112,7 +112,7 @@ a, a:visited {
   background: #020085;
   padding: 0 15px;
   z-index: 1;
-  transition: 2s;
+  
 }
 
 .empresa:hover .sub-m-1{
