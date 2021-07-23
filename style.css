@@ -68,7 +68,7 @@ header {
 }
 
 .header-bot{
-  /*grid-area: hb;*/
+  position: relative;
   background: white;
   display: flex;
   align-items: center;
@@ -91,22 +91,51 @@ header {
 
 .header-bot nav{
   margin-top: 4%;
+  margin-right: 4%;
+  width: 100%;
+  text-align: right;
+}
+
+.hmgr-menu{
+  visibility: hidden;
+  position: absolute;
+}
+
+.hmgr-menu img{
+  width: 30px;
 }
 
 .header-bot ul li{
   position: relative;
   display: inline-block;
-  padding: 10px 18px 10px 10px;
+
   color: #b5b5b5;
   text-transform: uppercase;
 }
 
-.menu-principal .li-menu-principal:last-child{
-  padding: 10px 0px 10px 10px;
+.li-menu-principal{
+  /* padding: 10px 0px 10px 10px; */
+  padding: 1% 0 1% 1%;
 }
 
-.header-bot ul li:last-child{
+.menu-principal{
+  visibility: visible;
+  width: 100%;
 }
+
+.sub-m-1, .sub-m-2{
+  /* padding: 10px 18px 10px 10px; */
+  padding: 1% 0 1% 1%;
+}
+
+.sub-m-1 li, .sub-m-2 li{
+  /* padding: 5% 0; */
+  padding: 5% 50% 5% 1%;
+}
+/* .menu-principal .li-menu-principal:last-child{
+  padding: 10px 0px 10px 10px;
+} */
+
 .menu ul{
   padding-inline-start: 0;
 }
@@ -281,7 +310,7 @@ footer span {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 480px) {
 	.container, .carrossel, .c-img, .div-tel, .logo-menu, .boxes, .logo-menu, .instrucoes, html, body{
 		width: 100%;
 	}
@@ -326,11 +355,21 @@ footer span {
 
   .boxes ul li p:first-child {
 
+  }
 
   .boxes ul{
     display: flex;
     flex-direction: column;
   }
 
+  .menu-principal{
+    visibility: hidden;
+  }
+
+  .hmgr-menu{
+    visibility: visible;
+    bottom: 30%;
+    right: 10%;
+  }
 
 }
