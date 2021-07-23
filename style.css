@@ -12,7 +12,6 @@ html, body{
 
 body{
   font-family: 'Roboto', sans-serif;
-  background: purple;
 }
 
 img{
@@ -224,8 +223,8 @@ main {
 
 .boxes ul li{
   display: inline-block;
-  margin: 0 ;
-  text-align: center;
+  margin: 0 0 0 1%;
+  text-align: justify;
   box-sizing: border-box;
 }
 
@@ -294,4 +293,44 @@ footer span {
   .instrucoes{
     flex-direction: column;
   }
+
+  h1{
+    text-align: center;
+  }
+
+  article{
+    padding: 3%;
+  }
+
+  .img-instrucoes{
+    align-self: center;
+  }
+
+  .img-c-texto{
+    text-align: justify;
+    width: 90%;
+    margin: auto;
+  }
+
+  .img-c-texto img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .boxes ul li p {
+    display: block;
+    margin: 0 0 15px;
+    width: 100%;
+}
+
+  .boxes ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*.boxes ul li {
+    /* text-align: center; justify
+    width: 100%;
+  } */
 }
