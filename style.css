@@ -320,17 +320,17 @@ footer span {
 
   .boxes ul li p {
     display: block;
-    margin: 0 0 15px;
+    margin: 15px 0;
     width: 100%;
 }
+
+  .boxes ul li p:first-child {
+
 
   .boxes ul{
     display: flex;
     flex-direction: column;
   }
 
-  /*.boxes ul li {
-    /* text-align: center; justify
-    width: 100%;
-  } */
+
 }
